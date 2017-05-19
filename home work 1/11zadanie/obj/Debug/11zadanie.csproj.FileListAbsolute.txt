@@ -1,0 +1,5 @@
+C:\Users\123\Desktop\zadaniy_cs\home work 1\11zadanie\bin\Debug\11zadanie.exe.config
+C:\Users\123\Desktop\zadaniy_cs\home work 1\11zadanie\bin\Debug\11zadanie.exe
+C:\Users\123\Desktop\zadaniy_cs\home work 1\11zadanie\bin\Debug\11zadanie.pdb
+C:\Users\123\Desktop\zadaniy_cs\home work 1\11zadanie\obj\Debug\11zadanie.exe
+C:\Users\123\Desktop\zadaniy_cs\home work 1\11zadanie\obj\Debug\11zadanie.pdb

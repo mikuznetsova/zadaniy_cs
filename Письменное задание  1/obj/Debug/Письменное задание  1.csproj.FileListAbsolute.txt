@@ -1,0 +1,6 @@
+C:\Users\123\Desktop\zadaniy_cs\Письменное задание  1\bin\Debug\Письменное задание  1.exe.config
+C:\Users\123\Desktop\zadaniy_cs\Письменное задание  1\bin\Debug\Письменное задание  1.exe
+C:\Users\123\Desktop\zadaniy_cs\Письменное задание  1\bin\Debug\Письменное задание  1.pdb
+C:\Users\123\Desktop\zadaniy_cs\Письменное задание  1\obj\Debug\Письменное задание  1.csprojResolveAssemblyReference.cache
+C:\Users\123\Desktop\zadaniy_cs\Письменное задание  1\obj\Debug\Письменное задание  1.exe
+C:\Users\123\Desktop\zadaniy_cs\Письменное задание  1\obj\Debug\Письменное задание  1.pdb
