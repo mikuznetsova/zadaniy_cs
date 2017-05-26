@@ -1,0 +1,5 @@
+C:\Users\123\Desktop\zadaniy_cs\02лабораторная\37zadanie\bin\Debug\37zadanie.exe.config
+C:\Users\123\Desktop\zadaniy_cs\02лабораторная\37zadanie\bin\Debug\37zadanie.exe
+C:\Users\123\Desktop\zadaniy_cs\02лабораторная\37zadanie\bin\Debug\37zadanie.pdb
+C:\Users\123\Desktop\zadaniy_cs\02лабораторная\37zadanie\obj\Debug\37zadanie.exe
+C:\Users\123\Desktop\zadaniy_cs\02лабораторная\37zadanie\obj\Debug\37zadanie.pdb
