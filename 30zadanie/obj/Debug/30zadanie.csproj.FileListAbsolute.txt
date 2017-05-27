@@ -1,6 +1,0 @@
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\30zadanie\bin\Debug\30zadanie.exe.config
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\30zadanie\bin\Debug\30zadanie.exe
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\30zadanie\bin\Debug\30zadanie.pdb
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\30zadanie\obj\Debug\30zadanie.csprojResolveAssemblyReference.cache
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\30zadanie\obj\Debug\30zadanie.exe
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\30zadanie\obj\Debug\30zadanie.pdb
