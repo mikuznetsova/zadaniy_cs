@@ -1,5 +1,0 @@
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\25zadanie\bin\Debug\25zadanie.exe.config
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\25zadanie\bin\Debug\25zadanie.exe
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\25zadanie\bin\Debug\25zadanie.pdb
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\25zadanie\obj\Debug\25zadanie.exe
-C:\Users\123\Desktop\zadaniy_cs\02лабораторная\25zadanie\obj\Debug\25zadanie.pdb
