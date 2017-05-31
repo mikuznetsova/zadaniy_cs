@@ -18,8 +18,8 @@ namespace _33zadanie
                 Console.Write("Значение T должно быть в интервале [0, 59]");
                 return;
             }
-            if (t%4==0||t%5==0||t%9==0||t%10==0)
-            {
+            if (t%3==0||t%4==0)
+            {            
                 Console.Write("Красный");
             }
             else

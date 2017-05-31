@@ -10,7 +10,7 @@ namespace _34zadanie
     {
         static void Main(string[] args)
         {
-            double w,h,c,d, r;
+            double w,h,c,d, r,r1;
             w = double.Parse(Console.ReadLine());
            h = double.Parse(Console.ReadLine());
             c = double.Parse(Console.ReadLine());
@@ -36,9 +36,9 @@ namespace _34zadanie
                 Console.Write("Значение D должно быть положительным");
                 return;
             }
-            r =(w*h)/(c*d);
-            r=r
-                if (w / c >= h / c)
+            r =(h/c)*(w/d);
+            r1=r-r%((h / c) * (w / d));
+            if (w / c >= h / c)
             {
                 Console.Write(r + "при C вдоль W");
                 
@@ -50,3 +50,4 @@ namespace _34zadanie
         }
     }
 }
+
