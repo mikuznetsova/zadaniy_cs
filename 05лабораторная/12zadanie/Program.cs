@@ -12,73 +12,22 @@ namespace _12zadanie
         {
             String X;
             X = Console.ReadLine();
-            if (X == "a")
+            string[] arr = "a b c d e f g h".sprlit (' ');
+            int i = 0;
+            while (i<8)
+           {   
+                if (X == arr[i] )
             {
-                Console.WriteLine("a+");
+                Console.WriteLine(arr[i]+"+");
             }
             else
             {
-                Console.WriteLine("a");
+                Console.WriteLine(arr[i]);
                
             }
-            if (X == "b")
-            {
-                Console.WriteLine("b+");
-            }
-            else
-            {
-                Console.WriteLine("b");
-            }
-
-            if (X == "c")
-            {
-                Console.WriteLine("c+");
-            }
-            else
-            {
-                Console.WriteLine("c");
-            }
-            if (X == "d")
-            {
-                Console.WriteLine("d+");
-            }
-            else
-            {
-                Console.WriteLine("d");
-            }
-            if (X == "e")
-            {
-                Console.WriteLine("e+");
-            }
-            else
-            {
-                Console.WriteLine("e");
-            }
-            if (X == "f")
-            {
-                Console.WriteLine("f+");
-            }
-            else
-            {
-                Console.WriteLine("f");
-            }
-            if (X == "g")
-            {
-                Console.WriteLine("g+");
-            }
-            else
-            {
-                Console.WriteLine("g");
-            }
-            if (X == "h")
-            {
-                Console.WriteLine("h+");
-            }
-            else
-            {
-                Console.WriteLine("h");
-            }
-         
+           i++;
+           }
+            
         }
     }
 }
