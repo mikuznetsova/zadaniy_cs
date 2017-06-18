@@ -29,21 +29,38 @@ namespace _07zadanie
             int i, j;
             i = s.IndexOf(ca);
             j = s.IndexOf(cb);
+            
             if (j > i)
-            {
-                r1 = s.Substring(0, i - 1);
-                r2 = s.Substring(i , j - i - 1);
-                r3 = s.Substring(j-i,9);
+            {if (i > 0)
+                {
+                    r1 = s.Remove(i);
+                    
+                }
+            else
+                {
+                    r1 =" ";
+                }
+                r2 = s.Substring(i, (j-i));
+                r3 = s.Substring(j);
             }
             else
             {
-                r1 = s.Substring(0, j - 1);
-                r2 = s.Substring(j, i - j - 1);
-                r3 = s.Substring(i - j, 9);
+                if (j > 0)
+                {
+                    r1 = s.Remove(j);
+
+                }
+                else
+                {
+                    r1 = " ";
+                }
+                r2 = s.Substring(j, (i-j));
+                r3 = s.Substring(i);
             }
-            Console.WriteLine("Часть 1: "+r1);
-            Console.WriteLine("Часть 2: "+r2);
-            Console.WriteLine("Часть 3: "+r3);
+            Console.WriteLine("Часть 1: " + r1);
+            Console.WriteLine("Часть 2: " + r2);
+            Console.WriteLine("Часть 3: " + r3);
         }
     }
 }
+ 
