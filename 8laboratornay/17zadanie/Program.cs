@@ -15,37 +15,38 @@ namespace _17zadanie
             int r = 0;
             string x = Console.ReadLine();
             string[] arr = x.Split(' ');
-            string[] arr2 = x.Split(' ');
+            
             int[] num = new int[arr.Length];
-            int[] num2 = new int[arr2.Length];
+            int[] num2 = new int[arr.Length];
 
             while (i < arr.Length )
             {
                 num[i] = Convert.ToInt32(arr[i]);
-                while (j < arr2.Length )
+                while (j < arr.Length )
                 {
-                    num2[j] = Convert.ToInt32(arr2[j]);
+                    num2[j] = Convert.ToInt32(arr[j]);
                     if (num[i] == num2[j])
                     {
                         r++;
-
+                        break;
                     }
 
-                    j++;
-
-                    
+                    j++;                    
+                }
+                if (r>0)
+                {
+                    break;
                 }
                 i++;
-                    j = i+1;
+                j = i+1;
             }
-            if (r > 1)
+            if (r>0)
             {
                 Console.WriteLine("Повторения есть");
 
             }
             else
             {
-
                 Console.WriteLine("Повторений нет");
             }
         }
