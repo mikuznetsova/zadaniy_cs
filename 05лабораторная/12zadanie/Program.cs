@@ -12,7 +12,7 @@ namespace _12zadanie
         {
             String X;
             X = Console.ReadLine();
-            string[] arr = "a b c d e f g h".sprlit (' ');
+            string[] arr = "a b c d e f g h".Split (' ');
             int i = 0;
             while (i<8)
            {   
