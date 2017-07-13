@@ -4,44 +4,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _18zadanie
+namespace _23zadanie
 {
     class Program
     {
         static void Main(string[] args)
         {
+
+            int k = int.Parse(Console.ReadLine());
             
+            int j = 0;
+            int r = 0;
             string x = Console.ReadLine();
             string[] arr = x.Split(' ');
 
             int[] num = new int[arr.Length];
-            
-            num[0] = Convert.ToInt32(arr[0]);
-            int r = num[0];
-            
-            int j = 1;
-            
-            
+           
 
+           
                 while (j < arr.Length)
                 {
                     num[j] = Convert.ToInt32(arr[j]);
-
-
-                    r = Math.Min(r, num[j]);
+                    if (k == num[j])
+                    {
+                        r++;
+                        
+                    }
 
                     j++;
                 }
-
                 
+               
             
-            Console.WriteLine(r);
+                Console.WriteLine(r);
 
-
-
-
-
+            
         }
     }
 }
-
