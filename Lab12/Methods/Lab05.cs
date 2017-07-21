@@ -63,5 +63,102 @@ namespace Methods
             return sb;
         }
 
+
+        public static bool task4257(double distanceInKm, double distanceInFeet)
+        {
+            double distanceInM = distanceInKm *1000;
+            double distanceInFeetM = distanceInFeet * 0.305;
+           
+            if(distanceInKm<0)
+            {
+                Exception ex = new Exception("Значение distanceInKm должно быть неотрицательным");
+                throw ex;
+            }
+            if (distanceInFeet < 0)
+            {
+                Exception ex = new Exception("Значение distanceInFeet должно быть неотрицательным");
+                throw ex;
+            }
+            return distanceInM<= distanceInFeetM;
+        }
+
+        public static String task2291(double velocityInKmH, double velocityInMS)
+        {
+            double velocityInKmHSEK = velocityInKmH*1000 /3600;
+
+
+            if (velocityInKmH < 0)
+            {
+                Exception ex = new Exception("Значение velocityInKmH  должно быть неотрицательным");
+                throw ex;
+            }
+            if (velocityInMS < 0)
+            {
+                Exception ex = new Exception("Значение velocityInMS  должно быть неотрицательным");
+                throw ex;
+            }
+            if (velocityInKmHSEK <= velocityInMS)
+            {
+               
+                return String.Format("{0:F2} км/ч меньше {1:F2} м/с", velocityInKmH, velocityInMS);
+            }
+            else
+            {
+
+                return String.Format("{1:F2} м/с  меньше {0:F2} км/ч", velocityInKmH, velocityInMS);
+            }
+
+        }
+
+
+        public static String task1763(double radius, double edge)
+        {
+            double Sr = radius* radius*Math.PI;
+            double Se = edge * edge;
+
+            if (radius < 0)
+            {
+                Exception ex = new Exception("Радиус должен быть положительным");
+                throw ex;
+            }
+            if (edge < 0)
+            {
+                Exception ex = new Exception("Сторона квадрата должна быть положительна");
+                throw ex;
+            }
+            if (Sr <= Se)
+            {
+
+                return String.Format("Площадь квадрата {1:F4} больше площади круга {0:F4}", Sr, Se);
+            }
+            else
+            {
+
+                return String.Format("Площадь круга  {0:F4} больше площади квадрата {1:F4}", Sr, Se);
+            }
+
+        }
+
+
+        public static bool task1945(double Sr, double Se)
+        {
+            double d  =2* Math.Sqrt(Sr /Math.PI);
+            double edge = Math.Sqrt(Se);
+
+            if (Sr < 0)
+            {
+                Exception ex = new Exception("Площадь круга должна быть положительной");
+                throw ex;
+            }
+            if (Se < 0)
+            {
+                Exception ex = new Exception("Площадь  квадрата должна быть положительна");
+                throw ex;
+            }
+            return d <= edge;
+        }
+
+
+
     }
 }
