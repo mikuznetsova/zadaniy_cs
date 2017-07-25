@@ -11,39 +11,45 @@ namespace _26zadanie
         static void Main(string[] args)
         {
             int i = 0;
-            int j = 1;
+            int a = 1;
             int r = 0;
+            int R = 0;
             string x = Console.ReadLine();
             string[] arr = x.Split(' ');
 
             int[] num = new int[arr.Length];
-            int[] num2 = new int[arr.Length];
+        
 
-            while (i < arr.Length)
+            while (a<10)
             {
-                num[i] = Convert.ToInt32(arr[i]);
-                while (j < arr.Length)
+                
+
+                while (i < arr.Length)
                 {
-                    num2[j] = Convert.ToInt32(arr[j]);
-                    if (num[i] > num2[j]|| num[i] < num2[j])
+                   num[i] = Convert.ToInt32(arr[i]);
+                    
+                    if (num[i] == a)
                     {
                         r++;
                         
                     }
 
-                    int R = 0;
-                    if (r>0)
+                     i++;                   
+                   
+                }
+                if (r>0)
                     {
                         R++;
+                   
                     }
-                    j++;
-                }
+                   
+                a++;
+                i = 0;
+                r = 0;
                 
-                i++;
-                j = i + 1;
             }
            
-                Console.WriteLine(R);
+             Console.WriteLine(R);   
 
             
         }
