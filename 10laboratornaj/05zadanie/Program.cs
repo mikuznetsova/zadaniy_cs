@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace _02zadanie
+
+namespace _05zadanie
 {
     class Program
     {
@@ -13,10 +14,13 @@ namespace _02zadanie
         {
             int x = int.Parse(Console.ReadLine());
             int y = int.Parse(Console.ReadLine());
-            int w= int.Parse(Console.ReadLine());
-            int h = int.Parse(Console.ReadLine());
-           
-            if (h < 0 ||w < 0||x>800||y>600||x+w>800||y+h>600)
+            int A = int.Parse(Console.ReadLine());
+            int L = int.Parse(Console.ReadLine());
+            double h = Math.Sqrt(L * L - (A * A / 4));
+            int X = x + A;
+            int X2 = X/2;
+            double Y = y + h;
+            if (L < 0 || A < 0 || x > 800 || y > 600 || X > 800 || Y > 600)
             {
                 Console.WriteLine("Ошибка");
                 return;
@@ -31,13 +35,14 @@ namespace _02zadanie
             writer.WriteLine("<body>");
 
             writer.WriteLine("<svg width=\"800\" height=\"600\">");
-            writer.WriteLine("<rect x=\"" + x + "\" y=\"" + y + "\" width =\"" + w + "\" height  =\"" + h + "\" stroke=\"blue\" stroke-width=\"2\" fill=\"red\" />");
+            writer.WriteLine("<polygon points =\""+x,y+X,y+ X2,Y +"\" stroke=\"blue\" stroke-width=\"10\" /> ");
+            
 
-            writer.WriteLine("</svg>");
+                 writer.WriteLine("</svg>");
             writer.WriteLine("</body>");
             writer.WriteLine("</html>");
             writer.Close();
-            System.Diagnostics.Process.Start(filename);//открывает самостоятельно в дальнейшем
+            System.Diagnostics.Process.Start(filename);
         }
     }
 }
