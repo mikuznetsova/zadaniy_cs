@@ -19,32 +19,39 @@ namespace _04zadanie
                 return;
             }
             StreamReader reader = new StreamReader(textName);
-            string line="";
-            
+            string line = "";
+
             if (reader.EndOfStream)
             {
                 Console.WriteLine("Файл пуст");
                 reader.Close();
                 return;
             }
-            
-               
-               
-                while (!reader.EndOfStream )
-                {
+     
+            int s = 0;
+
+            while (!reader.EndOfStream)
+            {
                 line = reader.ReadLine();//читает строку до первого /n
-               while( line.Contains("  ",))
+                if (!string.IsNullOrWhiteSpace(line))
                 {
-               line = line.Replace("  ", " ");
-                    
-                    Console.WriteLine(line);
+
+                    while (line.Contains("  "))
+                    {
+                        line = line.Replace("  ", " ");
+
+                    }
+                    string[] arrSumm = line.Split(new char[] { ' ' });
+                    s = s + arrSumm.Length;
                 }
-                
-                }
-             string[] arrSumm  = line.Split(new char[] { ' '});
-           
+
+            }
             reader.Close();
-            Console.Write(arrSumm.Length);
+
+            Console.Write(s);
         }
     }
 }
+
+
+

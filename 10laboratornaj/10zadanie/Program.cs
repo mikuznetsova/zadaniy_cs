@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace _09zadanie
+namespace _10zadanie
 {
     class Program
     {
@@ -15,25 +15,28 @@ namespace _09zadanie
             StreamWriter writer = new StreamWriter(filename);
 
             Random rnd = new Random();
-           
+
             int n = 100;//размер массива
-          
-            double circumference = 0;
 
-            int[] arr = new int[n];
-            writer.WriteLine("R;C");
-            for (int i = 0; i < n; i++ )
+            double R = 0;
+
+            int X, Y;
+           
+            writer.WriteLine("x;y;r");
+            for (int i = 0; i < n; i++)
             {
-                arr[i] = rnd.Next(1, 999);
+                
+             X = rnd.Next(0, 999);
+              Y = rnd.Next(0, 999);
+                R = -5 * Math.Sqrt(X + Math.Sqrt(Y));
 
-                circumference = 2*Math.PI* arr[i];
-               
-                writer.WriteLine(arr[i]+";"+ circumference);
+                writer.WriteLine(X + ";" + Y+ ";"+ R);
 
 
             }
             writer.Close();
         }
-        
+
     }
 }
+

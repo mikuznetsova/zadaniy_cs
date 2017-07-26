@@ -35,7 +35,7 @@ namespace _05zadanie
             writer.WriteLine("<body>");
 
             writer.WriteLine("<svg width=\"800\" height=\"600\">");
-            writer.WriteLine("<polygon points =\""+x,y+X,y+ X2,Y +"\" stroke=\"blue\" stroke-width=\"10\" /> ");
+            writer.WriteLine("<polygon points =\""+x+", "+y+X,y+ X2,Y +"\" stroke=\"blue\" stroke-width=\"10\" /> ");
             
 
                  writer.WriteLine("</svg>");
