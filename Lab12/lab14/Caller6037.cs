@@ -73,7 +73,7 @@ namespace lab14
                     Console.WriteLine("Не пересекаются");
                 }
             }
-            catch (InvalidOperationException ex)
+            catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }
@@ -103,7 +103,7 @@ namespace lab14
                     Console.WriteLine("Не пересекаются");
                 }
             }
-            catch (InvalidOperationException ex)
+            catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }

@@ -39,7 +39,7 @@ namespace _08zadanie
                 line = line.Substring(line.IndexOf("\\") + 1);//обрежем до последнего/
                 while (line.Contains("\\"))
                 {
-                    line = line.Substring(line.IndexOf("\\"));
+                    line = line.Substring(line.IndexOf("\\")+1);
                 }
                 line = line.Remove(line.IndexOf("."));//обрежем все после .
                 if (line.Contains("\\") || line.Contains("*")//проверка
