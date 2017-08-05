@@ -11,6 +11,12 @@ namespace Classes.task7301
         public int x;
         public int y;
 
+        //public Point()
+        //{
+        //    x = 50;
+        //    y = 50;
+        //}
+
         public Point(int x, int y)
         {
             this.x = x;

@@ -44,8 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caller1379.cs" />
+    <Compile Include="Caller2000.cs" />
+    <Compile Include="Caller2401.cs" />
+    <Compile Include="Caller2662.cs" />
+    <Compile Include="Caller2809.cs" />
+    <Compile Include="Caller5242.cs" />
+    <Compile Include="Caller5421.cs" />
+    <Compile Include="Caller5449.cs" />
     <Compile Include="Caller6011.cs" />
     <Compile Include="Caller6037.cs" />
+    <Compile Include="Caller7297.cs" />
+    <Compile Include="Caller7301.cs" />
     <Compile Include="Caller9914.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

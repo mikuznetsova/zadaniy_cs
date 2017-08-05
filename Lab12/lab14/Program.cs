@@ -36,10 +36,10 @@ namespace lab14
             //Caller6011.Step4();
             //Caller6011.Step5();
 
-            Caller6037.Step1();
-            Caller6037.Step2();
-            Caller6037.Step3();
-            Caller6037.Step4();
+            //Caller6037.Step1();
+            //Caller6037.Step2();
+            //Caller6037.Step3();
+            //Caller6037.Step4();
 
             //Caller2809.Step1();
             //Caller2809.Step2();
@@ -58,11 +58,14 @@ namespace lab14
             //Caller1379.Step1();
             //Caller1379.Step2();
             //Caller1379.Step3();
+            //Console.WriteLine();
             //Caller1379.Step4();
 
             //Caller2401.Step1();
             //Caller2401.Step2();
+            //Console.WriteLine();
             //Caller2401.Step3();
+            //Console.WriteLine();
             //Caller2401.Step4();
 
             //Caller5421.Step1();
@@ -92,6 +95,12 @@ namespace lab14
             //Caller5449.Step4();
             //Caller5449.Step5();
             //Caller5449.Step6();
+            Caller2662.Step1();
+            Caller2662.Step2();
+            Caller2662.Step3();
+            Caller2662.Step4();
+            Caller2662.Step5();
+            Caller2662.Step6();
 
             //Caller4147.Step1();
             //Caller4147.Step2();

@@ -24,13 +24,31 @@ namespace Classes.task5449
         
         public override bool Equals(Object o)
         {
+            //Сравнение с собой
             if (this == o) return true;
-            if (o == null || GetType() != o.GetType()) return false;
+            //Есть ли с чем сравнивать?
+            if (o == null
+                //Совпадает ли тип?
+                || GetType() != o.GetType()) return false;
 
+            //для удобства, приводим тип
             Point point = (Point)o;
 
-            if (x != point.x) return false;
-            return y == point.y;
+            if (x != point.x)
+            {
+                return false;
+            }
+            else
+            {
+                if (y == point.y)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
         }
         
         public override int GetHashCode()

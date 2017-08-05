@@ -9,6 +9,13 @@ namespace lab14
 {
     public class Caller7301
     {
+        //public static void Step0()
+        //{
+        //    Point p = new Point();
+        //    p.y = 0;
+        //    Console.WriteLine(p);
+        //}
+
         public static void Step1()
         {
             Point p = new Point(53, 59);
