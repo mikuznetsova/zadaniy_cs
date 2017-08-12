@@ -80,5 +80,27 @@ namespace lab14
                 Console.WriteLine("Не пересекаются");
             }
         }
+        public static void Step7()
+        {
+            Rectangle r = new Rectangle(10, 10, 200, 100);
+            Rectangle r2 = new Rectangle(50, 50, 300, 350);
+          
+            if (r.getProjectionY().Intersects(r2.getProjectionY()))
+            {
+                if (r.getProjectionX().Intersects(r2.getProjectionX()))
+                {
+                    Console.WriteLine("Пересекаются");
+                }
+                else
+                {
+                    Console.WriteLine("Не пересекаются");
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("Не пересекаются");
+            }
+        }
     }
 }
