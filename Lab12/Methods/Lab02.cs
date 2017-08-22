@@ -128,7 +128,25 @@ namespace Methods
             double R = 1 /Math.Sqrt(a*x*x + b*x + c);
             return R;
         }
+        public static double task9164(double a, double b)
+        {
 
-        
+            double r = Math.Sin(a * Math.PI / 180)* Math.Cos(b * Math.PI / 180)+ Math.Sin(b * Math.PI / 180) * Math.Cos(a * Math.PI / 180);
+
+            return r;
+        }
+        public static double task5789(double x1, double x2, double y1, double y2)
+        {
+
+            double r = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+            return r;
+        }
+        public static double task5662(double x1, double x2, double y1, double y2)
+        {
+
+            double r = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+            return r;
+        }
+
     }
 }

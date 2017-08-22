@@ -8,7 +8,67 @@ namespace Methods
 {
     public class Lab06
     {
-        public static StringBuilder task8495(StringBuilder sb8495)
+        public static int task3669(int a, int b)
+        {
+            int r = 1;
+            int i = 0;
+            if (b > a)
+            {
+                while (a < b)
+                {
+                    r = r * (a + i);
+
+                    i++;
+                }
+            }
+            else
+            {
+                while (b < a)
+                {
+                    r = r * (b + i);
+                    i++;
+                }
+            }
+            
+            return r;
+        }
+
+
+        public static int task5969(int a, int b)
+        {
+           int  i = 0;
+            int y = 0;
+            if (a <= b)
+            {
+                while ((a + i) <= b)
+
+                {
+                    if ((a + i) % 7 == 0)
+                    {
+                        y = y + (a + i);
+                    }
+                    i++;
+                }
+            }
+            else
+            {
+                while ((b + i) <= a)
+                {
+                    if ((b + i) % 7 == 0)
+                    {
+                        y = y + (b + i);
+                    }
+                    i++;
+                }
+
+            }
+
+            return r;
+
+        }
+
+
+            public static StringBuilder task8495(StringBuilder sb8495)
         {
 
 

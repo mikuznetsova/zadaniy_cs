@@ -12,23 +12,30 @@ namespace tfa
     {
         static void Main(string[] args)
         {
-            Step1();
+            //Step1();
+            //Console.WriteLine();
+            //Step2();
+            //Console.WriteLine();
+            //Step3();
+            //Console.WriteLine();
+            //Step4();
+            //Console.WriteLine();
+            Step5();
             Console.WriteLine();
-            Step2();
+            Step6();
             Console.WriteLine();
-            Step3();
+            Step7();
             Console.WriteLine();
-            Step4();
+            Step8();
             Console.WriteLine();
-            //Step5();
-            //Step6();
-            //Step7();
-            //Step8();
-            //Step9();
-            //Step10();
-            //Step11();
-            Step12();
+            Step9();
             Console.WriteLine();
+            Step10();
+            Console.WriteLine();
+            Step11();
+            Console.WriteLine();
+            //Step12();
+            //Console.WriteLine();
 
             //Step13();
             //Step14();
@@ -67,21 +74,21 @@ namespace tfa
             Console.WriteLine("{0:F6}", Lab02.task2790(0) - 1.0000);
         }
 
-        //static void Step5()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task9164(90, 90) - 0.0);
-        //    Console.WriteLine("{0:F6}", Lab02.task9164(90, 0) - 1.0);
-        //    Console.WriteLine("{0:F6}", Lab02.task9164(7559, 7549) - -0.2079);
-        //}
+        static void Step5()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task9164(90, 90) - 0.0);
+            Console.WriteLine("{0:F6}", Lab02.task9164(90, 0) - 1.0);
+            Console.WriteLine("{0:F6}", Lab02.task9164(7559, 7549) - -0.2079);
+        }
 
-        //static void Step6()
-        //{
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(1, 1, 3, 4) - 3.6055);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(-2, 4, 8, -10) - 17.2046);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, -5, -7) - 8.6023);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, 0, 0) - 0);
-        //    Console.WriteLine("{0:F6}", Lab02.task5789(-1, -3, 2, 9) - 12.3693);
-        //}
+        static void Step6()
+        {
+            Console.WriteLine("{0:F6}", Lab02.task5789(1, 1, 3, 4) - 3.6055);
+            Console.WriteLine("{0:F6}", Lab02.task5789(-2, 4, 8, -10) - 17.2046);
+            Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, -5, -7) - 8.6023);
+            Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, 0, 0) - 0);
+            Console.WriteLine("{0:F6}", Lab02.task5789(-1, -3, 2, 9) - 12.3693);
+        }
 
         //static void Step7()
         //{
@@ -91,29 +98,29 @@ namespace tfa
         //    Console.WriteLine(Lab05.task5662(0, 7, 13));
         //}
 
-        //static void Step8()
-        //{
-        //    Console.WriteLine(Lab05.task3770(1, 2, 3) - 3);
-        //    Console.WriteLine(Lab05.task3770(7, 4, -2) - 7);
-        //    Console.WriteLine(Lab05.task3770(0, 5, -7) - 5);
-        //}
+        static void Step8()
+        {
+            Console.WriteLine(Lab05.task3770(1, 2, 3) - 3);
+            Console.WriteLine(Lab05.task3770(7, 4, -2) - 7);
+            Console.WriteLine(Lab05.task3770(0, 5, -7) - 5);
+        }
 
-        //static void Step9()
-        //{
-        //    Console.WriteLine(Lab05.task3669(8, 13) - 1235520);
-        //    Console.WriteLine(Lab05.task3669(159, 161) - 4095840);
-        //    Console.WriteLine(Lab05.task3669(648, 648) - 648);
-        //    Console.WriteLine(Lab05.task3669(-2, 600));
-        //    Console.WriteLine(Lab05.task3669(50, 24) - 2421409269157986304L);
-        //}
+        static void Step9()
+        {
+            Console.WriteLine(Lab06.task3669(8, 13) - 1235520);
+            Console.WriteLine(Lab06.task3669(159, 161) - 4095840);
+            Console.WriteLine(Lab06.task3669(648, 648) - 648);
+            Console.WriteLine(Lab06.task3669(-2, 600));
+            Console.WriteLine(Lab06.task3669(50, 24) - 2421409269157986304L);
+        }
 
-        //static void Step10()
-        //{
-        //    Console.WriteLine(Lab06.task5969(8, 13));
-        //    Console.WriteLine(Lab06.task5969(25, 44) - 105);
-        //    Console.WriteLine(Lab06.task5969(80, 100) - 273);
-        //    Console.WriteLine(Lab06.task5969(300, 24) - 6279);
-        //}
+        static void Step10()
+        {
+            Console.WriteLine(Lab06.task5969(8, 13));
+            Console.WriteLine(Lab06.task5969(25, 44) - 105);
+            Console.WriteLine(Lab06.task5969(80, 100) - 273);
+            Console.WriteLine(Lab06.task5969(300, 24) - 6279);
+        }
 
         //static void Step11()
         //{

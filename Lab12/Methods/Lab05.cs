@@ -8,6 +8,14 @@ namespace Methods
 {
    public class Lab05
     {
+        public static double task3770 (double x, double y, double z)
+        {
+          
+            double r = Math.Max(Math.Max(x, y), z); 
+            return r;
+        }
+
+
         public static bool task4847(int x, int y, int z)
         {
             //if (x == y || x == z || y == z)
@@ -39,6 +47,17 @@ namespace Methods
             return x >= 1 && y >= 2 && y <= 4;
         }
 
+        public static bool task7250(double x, double y)
+        {
+
+            return x >= 2 && (y >= 1 || y <= -1.5) ;
+        }
+        public static bool task9038(double x, double y)
+        {
+
+            return (y >= 0.5 && y <= 1.5 && x < 2) || x >= 2;
+        }
+       
 
         public static StringBuilder task8518(StringBuilder sb, String x)
         {

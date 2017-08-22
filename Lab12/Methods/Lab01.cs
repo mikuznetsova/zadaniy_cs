@@ -42,5 +42,25 @@ namespace Methods
             Console.WriteLine("\""+ a+ "\"");
 
         }
+        public static void task2959 (String id)
+        {
+            Console.WriteLine("SELECT first_name, last_name, group \n FROM students WHERE student_id = '" + id + "' ; ");
+
+        }
+        public static void task7271 (double x, double y)
+        {
+            Console.WriteLine("	INSERT INTO points (x, y) VALUES ('"+x+"', '" + y + "') ; ");
+
+        }
+        public static void task2632 (int x, int y, int r , String f)
+        {
+            Console.WriteLine("	<circle cx=\"" + x + "\" cy = \"" + y + "\n \"r = \""+r+ "\" fill = \"" +f+ "\" /> ");
+
+        }
+        public static void task4343 (String u, String p, String h, String port, String db)
+        {
+            Console.WriteLine("User ID=" + u + ";Password=" + p + "; Host = " +h + ";Port=" + port + ";Database="+db+";");
+
+        }
     }
 }
