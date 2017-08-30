@@ -176,8 +176,23 @@ namespace Methods
             }
             return d <= edge;
         }
+        public static IList<double> Task4497(double x, double y, double z)
+        {
+            IList<double> list = new List<double>();
 
-
-
+            if (x < 5 && x > -3)
+            {
+               list.Add(x);
+            }
+            if (y < 5 && y > -3)
+            {
+                list.Add(y);
+            }
+            if (z < 5 && z > -3)
+            {
+                list.Add(y);
+            }
+            return list;
+        }
     }
 }

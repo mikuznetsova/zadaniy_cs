@@ -75,6 +75,8 @@
     <Compile Include="task7301\Point.cs" />
     <Compile Include="task8403\Point.cs" />
     <Compile Include="task9914\Interval.cs" />
+    <Compile Include="task9924\Point.cs" />
+    <Compile Include="To\String.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
