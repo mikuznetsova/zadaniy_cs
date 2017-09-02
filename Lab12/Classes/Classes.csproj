@@ -66,6 +66,7 @@
     <Compile Include="task4147\Point.cs" />
     <Compile Include="task4147\Rectangle.cs" />
     <Compile Include="task5032\Rectangle.cs" />
+    <Compile Include="task5108\Rectangle.cs" />
     <Compile Include="task5242\Interval.cs" />
     <Compile Include="task5421\Point.cs" />
     <Compile Include="task5449\Point.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="task6037\Interval.cs" />
     <Compile Include="task7297\Interval.cs" />
     <Compile Include="task7301\Point.cs" />
+    <Compile Include="task8258\Comparator8258.cs" />
     <Compile Include="task8403\Point.cs" />
     <Compile Include="task9914\Interval.cs" />
     <Compile Include="task9924\Point.cs" />
