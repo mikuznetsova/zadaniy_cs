@@ -72,6 +72,9 @@
     <Compile Include="task5449\Point.cs" />
     <Compile Include="task6011\Point.cs" />
     <Compile Include="task6037\Interval.cs" />
+    <Compile Include="task6981\Circle.cs" />
+    <Compile Include="task6981\Rectangle.cs" />
+    <Compile Include="task6981\Shape.cs" />
     <Compile Include="task7297\Interval.cs" />
     <Compile Include="task7301\Point.cs" />
     <Compile Include="task8258\Comparator8258.cs" />

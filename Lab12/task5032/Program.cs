@@ -11,7 +11,8 @@ namespace task5032
     class Program
     {
         static void Main(string[] args)
-        { Rectangle r = new Rectangle (100, 100, 100, 100);
+        {
+            Rectangle r = new Rectangle (100, 100, 100, 100);
 
             string textIndex = Console.ReadLine();//ввели № 
             string textName = "test" + textIndex + ".csv";//узнали название фаила
@@ -29,7 +30,6 @@ namespace task5032
                 reader.Close();
                 return;
             }
-
       
             try
             {
@@ -38,35 +38,7 @@ namespace task5032
                     line = reader.ReadLine();//читает строку до первого /n
                     i++;
                     string[] arr = line.Split(';');
-                    if(arr.Length<2||arr.Length>2)
-                    {
-                        Console.WriteLine("Некорректный формат");
-                        reader.Close();
-                        return;
-                    }
-                    if (arr[0].Equals("shiftX"))
-                    {
-                        r.shiftX(arr[1]);
-                    }
-                   else if (arr[0].Equals("shiftY"))
-                    {
-                        r.shiftY(arr[1]);
-                    }
-                    else if(arr[0].Equals("stretchX"))
-                    {
-                        r.stretchX(arr[1]);
-                    }
-                    else if(arr[0].Equals("stretchY"))
-                    {
-                        r.stretchY(arr[1]);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Некорректное действие: "+arr[0]);
-                        reader.Close();
-                        return;
-                    }
-
+                    selectAction(arr, r);
                 }
 
                 Console.Write ("действий:" + i+ " " + r);
@@ -75,8 +47,39 @@ namespace task5032
             {
                 Console.WriteLine(e.Message);
             }
-           
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             reader.Close();
+        }
+
+        public static void selectAction(string[] arr, Rectangle r)
+        {
+            if (arr.Length < 2 || arr.Length > 2)
+            {
+                throw new FormatException("Некорректный формат");
+            }
+            if (arr[0].Equals("shiftX"))
+            {
+                r.shiftX(arr[1]);
+            }
+            else if (arr[0].Equals("shiftY"))
+            {
+                r.shiftY(arr[1]);
+            }
+            else if (arr[0].Equals("stretchX"))
+            {
+                r.stretchX(arr[1]);
+            }
+            else if (arr[0].Equals("stretchY"))
+            {
+                r.stretchY(arr[1]);
+            }
+            else
+            {
+                throw new InvalidOperationException("Некорректное действие: " + arr[0]);
+            }
         }
     }
 }

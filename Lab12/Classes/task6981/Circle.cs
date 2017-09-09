@@ -20,29 +20,31 @@ namespace Classes.task6981
             this.r = int.Parse(r);
             this.id = id;
         }
-        public void shiftX(string s)
+        public override void shiftX(string s)
         {
             int a = int.Parse(s);
-            x = x + a;
-            n++;
-            if (x <= 0)
+            if ((x + a - r) < 0)
             {
                 throw new InvalidOperationException("Координата X должна быть неотрицательной");
 
             }
-        }
-        public void shiftY(string s)
-        {
-            int a = int.Parse(s);
-            y = y + a;
+            x = x + a;
             n++;
-            if (y <= 0)
+            
+        }
+        public override void shiftY(string s)
+        { int a = int.Parse(s);
+            if ((y+a-r)<0)
             {
                 throw new InvalidOperationException("Координата Y должна быть неотрицательной");
 
             }
+           
+            y = y + a;
+            n++;
+            
         }
-        public void stretchX(string s)
+        public override void stretchX(string s)
         {
             this.stretchXY(s);
             if (x <= 0 || y <= 0 || r <= 0)
@@ -51,16 +53,16 @@ namespace Classes.task6981
 
             }
         }
-        public void stretchY(string s)
+        public override void stretchY(string s)
         {
             this.stretchXY(s);
-            if (x <= 0 || y <= 0 || r <= 0)
+            if (x-r<0||y-r<0 )
             {
                 throw new InvalidOperationException("Высота должна быть положительной");
 
             }
         }
-        private void stretchXY(string s)
+        private  void stretchXY(string s)
         {
             int a = int.Parse(s);
             x = x + a / 2;
@@ -72,7 +74,7 @@ namespace Classes.task6981
 
         public override string ToString()
         {
-            return "{\"cx\":" + x + ",\"cy\":" + y + ", \"r\":" + r + "}";
+            return base.ToString() + "{\"cx\":" + x + ",\"cy\":" + y + ", \"r\":" + r + "}";
         }
 
     }
