@@ -51,12 +51,12 @@ namespace task6981
                     }
                     if(arr[1].Contains("rectangle "))
                     {
-                        Rectangle r = new Rectangle(arr[3], arr[4], arr[5], arr[6]);
+                        Rectangle r = new Rectangle(arr[3], arr[4], arr[5], arr[6], arr[2]);
                         mapr.Add(arr[2],r);
                     }
                     else if (arr[1].Contains("circle "))
                     {
-                        Circle r = new Circle(arr[3], arr[4], arr[5]);
+                        Circle r = new Circle(arr[3], arr[4], arr[5], arr[2]);
                         mapc.Add(arr[2], r);
                     }
                     else if (arr[0].Equals("shiftX"))

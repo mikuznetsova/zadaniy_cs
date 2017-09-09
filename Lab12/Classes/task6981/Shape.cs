@@ -9,10 +9,10 @@ namespace Classes.task6981
     public abstract class Shape
     {
         protected string id;
-       
+        protected int n =0;
 
 
-       
+
     }
 
 }

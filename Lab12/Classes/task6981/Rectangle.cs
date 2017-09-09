@@ -12,7 +12,8 @@ namespace Classes.task6981
         private int y;
         private int w;
         private int h;
-        private int n;
+   
+
 
         public Rectangle(string x, string y, string w, string h, string id)
         {
@@ -28,9 +29,11 @@ namespace Classes.task6981
         {
             int a = int.Parse(s);
             x = x + a;
+            n++;
             if (x <= 0)
             {
                 throw new InvalidOperationException("Координата X должна быть неотрицательной");
+               
             }
            
         }
@@ -38,6 +41,7 @@ namespace Classes.task6981
         {
             int a = int.Parse(s);
             y = y + a;
+            n++;
             if (y <= 0)
             {
                 throw new InvalidOperationException("Координата Y должна быть неотрицательной");
@@ -48,6 +52,7 @@ namespace Classes.task6981
         {
             int a = int.Parse(s);
             w = w + a;
+             n++;
             if (w <= 0)
             {
                 throw new InvalidOperationException("Ширина должна быть положительной");
@@ -58,6 +63,7 @@ namespace Classes.task6981
         {
             int a = int.Parse(s);
             h = h + a;
+            n++;
             if (h <= 0)
             {
                 throw new InvalidOperationException("Высота должна быть положительной");
